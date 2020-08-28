@@ -9,14 +9,8 @@ pipeline {
             }
             stage('Build') {
                   steps {
-                        echo 'printing enviornment variable'
-                        // sh 'printenv'
-                      //  sh '''
-                       //       cd /var/www/html
-                       //       sudo rm -f index.html
-                        //      git init
-                        //      git pull https://github.com/xyz/web-demo.git
-                       // '''         
+                        echo 'printing enviornment variable'  
+                        //sh 'mvn -f java-tomcat-sample/pom.xml clean package'
                   }
             }
             stage('Deploy') {
@@ -28,6 +22,7 @@ pipeline {
             stage('Deploy to Production') {
                   steps {
                         echo "Deploying the test website to production"
+                        
                   }
             }
             
