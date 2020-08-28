@@ -10,7 +10,7 @@ pipeline {
             stage('Build') {
                   steps {
                         echo 'printing enviornment variable'
-                        sh 'printenv'
+                        // sh 'printenv'
                         
                         
                   }
