@@ -16,7 +16,7 @@ pipeline {
                        //       sudo rm -f index.html
                         //      git init
                         //      git pull https://github.com/ashutoshdubey21/web-demo.git
-                        '''
+                       // '''
                         
                         
                   }
